@@ -17,7 +17,7 @@ https://www.marinespecies.org/aphia.php?p=editors,False
 https://www.marinespecies.org/aphia.php?p=stats,False
 https://www.marinespecies.org/aphia.php?p=match,True
 https://www.marinespecies.org/aphia.php?p=webservice,True
-https://www.marinespecies.org/aphia.php?p=browser,False
+https://www.marinespecies.org/aphia.php?p=browser,True
 https://www.marinespecies.org/aphia.php?p=idkeys,True
 https://www.marinespecies.org/aphia.php?p=manual,True
 https://www.marinespecies.org/aphia.php?p=image&tid=214647&pic=145406,False
@@ -467,7 +467,7 @@ https://www.marinespecies.org/aphia.php?p=idkeys_redirect&page=select_group&grou
 https://www.marinespecies.org/aphia.php?p=idkeys_redirect&page=select_group&group=67,False
 https://www.marinespecies.org/aphia.php?p=idkeys_redirect&page=select_group&group=125,False
 https://www.marinespecies.org/aphia.php?p=idkeys_redirect&page=select_group&group=16,False
-https://www.marinespecies.org/aphia.php?p=idkeys_redirect&page=select_group&group=29,False
+https://www.marinespecies.org/aphia.php?p=idkeys_redirect&page=select_group&group=29,True
 https://www.marinespecies.org/aphia.php?p=idkeys_redirect&page=select_group&group=84,True
 https://www.marinespecies.org/aphia.php?p=idkeys_redirect&page=licence&taxon=965&keyid=140,False
-https://www.marinespecies.org/aphia.php?p=idkeys_redirect&page=begin,False
+https://www.marinespecies.org/aphia.php?p=idkeys_redirect&page=begin,True
