@@ -4547,4 +4547,12 @@ http://www.marinespecies.org/aphia.php?p=sourceexport&what=single&id=347516&form
 http://www.marinespecies.org/aphia.php?p=sourceexport&what=single&id=347516&format=bib,False
 http://www.marinespecies.org/aphia.php?p=sourcedetails&id=347516#taxa,False
 http://www.marinespecies.org/aphia.php?p=taxdetails&id=1355602,False
-http://www.marinespecies.org/aphia.php?p=taxdetails&id=118149,False
+http://www.marinespecies.org/aphia.php?p=taxdetails&id=118149,True
+http://www.marinespecies.org/aphia.php?p=taxdetails&id=150928,False
+http://www.marinespecies.org/aphia.php?p=taxdetails&id=150868,False
+http://www.marinespecies.org/aphia.php?p=taxdetails&id=118120,False
+http://www.marinespecies.org/aphia.php?p=browser&id=118120#focus,False
+http://www.marinespecies.org/aphia.php?p=taxdetails&id=118149#sources,False
+http://www.marinespecies.org/aphia.php?p=taxdetails&id=118149#distributions,False
+http://www.marinespecies.org/aphia.php?p=taxdetails&id=118149#attributes,False
+http://www.marinespecies.org/aphia.php?p=taxdetails&id=118149#links,False
