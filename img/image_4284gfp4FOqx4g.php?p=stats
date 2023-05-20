@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>WoRMS - World Register of Marine Species</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <meta name="google-site-verification" content="K3-dDlqPOhXjZBSl_DXhAQ9y-EoX2OogyHQaUtlaSR4"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png?=v2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png?=v2">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png?=v2">
+    <link rel="manifest" href="/images/favicon/manifest.json?=v2">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg?=v2" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="shortcut icon" href="/images/favicon/favicon.ico?=v2" />
+    <link title="WoRMS search" type="application/opensearchdescription+xml" rel="search" href="/provider.xml" />
+    <link rel="stylesheet" type="text/css" href="https://www.marinespecies.org/aphia/css/third_party.css?1684449099" />
+<script type="text/javascript" src="https://www.marinespecies.org/aphia/js/third_party.js?1684449083" ></script>
+<script type="text/javascript" src="https://www.marinespecies.org/aphia/js/aphia.js?1684449097" ></script>
+<link type="text/css" rel="stylesheet" href="/styles.css?1684449510" />
+
+        <link rel="alternate" title="WoRMS latest taxa additions" href="https://www.marinespecies.org/aphia.php?p=rss" type="application/rss+xml" />
+        <link rel="alternate" title="WoRMS latest taxa edits" href="https://www.marinespecies.org/aphia.php?p=rss&type=edit" type="application/rss+xml" />
+        <link rel="alternate" title="WoRMS latest taxa checked" href="https://www.marinespecies.org/aphia.php?p=rss&type=check" type="application/rss+xml" />
+        <link rel="alternate" title="WoRMS latest distribution additions" href="https://www.marinespecies.org/aphia.php?p=rss&what=dr" type="application/rss+xml" />
+        <link rel="alternate" title="WoRMS latest note additions" href="https://www.marinespecies.org/aphia.php?p=rss&what=notes" type="application/rss+xml" />
+        <link rel="alternate" title="WoRMS latest vernacular additions" href="https://www.marinespecies.org/aphia.php?p=rss&what=vernaculars" type="application/rss+xml" />
+        <link rel="alternate" title="WoRMS latest image additions" href="https://www.marinespecies.org/aphia.php?p=rss&what=images" type="application/rss+xml" />
+<script language="javascript" type="text/javascript" src="aphia.php?p=js"></script>
+<link rel="alternate" title="WoRMS latest attributes additions" href="https://www.marinespecies.org/aphia.php?p=rss&what=at" type="application/rss+xml" />
+<link rel="stylesheet" type="text/css" href="https://www.marinespecies.org/aphia/css/aphia_core.css?1684449099" />
+
+<script>var aphia_jquery = $;</script><style>
+                    h1, h2, h3 {
+                        color: #256092;
+                    }
+                </style>
+
+</head>
+<body>
+
+<div class="main_bg">
+<div class="container-fluid">
+    <div class="row">
+        <nav class="navbar navbar-default worms-header">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header visible-xs">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#navigation-shared,#navigation-content" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="/images/layout/worms_logo.png" height="60px"/>
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse worms-nav-menu" id="navigation-content">
+                <div class="worms-nav-menu-table">
+                    <div class="worms-nav-menu-table-cell-col1 hidden-xs">
+                        <a class="navbar-left" href="/index.php">
+                            <img src="/images/layout/worms_logo.png" height="100px"/>
+                        </a>
+                    </div>
+                    <div class="worms-nav-menu-table-cell-col2">
+                        <div class="content_options">
+                            <ul id="aphiaContentOpts" class="list-inline" style="display: none;">
+    <li class="list-item">
+        marine only&nbsp;
+        <div class="material-switch pull-right">
+            <input id="contentEnableMarine" name="contentEnableMarine" type="checkbox" checked="checked"/>
+            <label for="contentEnableMarine"></label>
+        </div>
+    </li>
+    <li class="list-item">
+        extant only&nbsp;&nbsp;
+        <div class="material-switch pull-right">
+            <input id="contentEnableExtant" name="contentEnableExtant" type="checkbox"/>
+            <label for="contentEnableExtant"></label>
+        </div>
+    </li>
+</ul>
+                        </div>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/index.php">Home</a></li>
+                            <li><a href="/about.php">About</a></li>
+                            <li><a href="/subregisters.php">Subregisters</a></li>
+                            <li><a href="/users.php">Users</a></li>
+                            <li><a href="/photogallery.php">Photogallery</a></li>
+                            <li><a href="/documents.php">Documents</a></li>
+                            <li><a href="/lifewatch.php">LifeWatch</a></li>
+                            <li><a href="/contribute.php">Contribute</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- /.navbar-collapse -->
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse aphia-nav-menu" id="navigation-shared">
+                <div class="aphia-nav-menu-table">
+                    <div class="aphia-nav-menu-table-cell-col1 hidden-xs">
+                        <form id="aphia-quick-search-form" class="navbar-form navbar-left" action="/aphia.php?p=taxlist" method="post">
+                            <div class="input-group" style="width: 280px;">
+                                
+    <script type="text/javascript">
+        var comp_jquery = $;
+        comp_jquery(document).ready(function() {
+                            window.initAphiaComponentCombobox('8f737bf55191ce39', {
+                            view_component_ajax_url: '/aphia.php?p=rest&__route__/AjaxAphiaRecordsByNamePart',
+                view_component_ajax_request_delay: 500,                                                view_dict_optional_ajax_args: {
+                                    'rank_min': "10",
+                                    'combine_vernaculars': "0",
+                                    'marine_only': "1",
+                                    'fossil_id': "4",
+                                },                view_component_ajax_append_input_to_url: true,                                view_dict_dynamic_ajax_args: "if ($('#quick_search_inc_common').prop('checked')) { data['combine_vernaculars'] = 1; }",                view_component_ajax_dont_trigger_numbers: true,                        view_component_allow_user_text: true,                                                                                                view_selection_placeholder: 'Quick search...',            view_hidden_key_id: 'tid',                                    view_hidden_data_id: 'tName',                                                    });
+
+        });
+    </script>
+        <div id="8f737bf55191ce39_storage" name="8f737bf55191ce39_storage"></div>
+                                    <div class="input-group">
+                                    <select id="8f737bf55191ce39" class="form-control input-sm"></select>
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cog"></span> <span class="caret"></span></button>
+                                        <ul class="dropdown-menu">
+                                            <li class="quick_search_inc_chk"><a href="#" data-value="option1" tabIndex="-1"><input id="quick_search_inc_scientific" checked="checked" disabled="disabled" type="checkbox"/>&nbsp;Scientific names</a></li>
+                                            <li class="quick_search_inc_chk"><a href="#" data-value="option2" tabIndex="-1"><input id="quick_search_inc_common" type="checkbox"/>&nbsp;Common names (slower)</a></li>
+                                            <li class="quick_search_inc_chk"><a style="padding-left: 33px;" href="/aphia.php?p=search&adv=1">&nbsp;Advanced search</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <script type="text/javascript">
+                                    $("#8f737bf55191ce39_storage").change(function(event) {
+                                        $(".select2-search--inline").hide();
+                                        var tid = $(this).children('input[name="tid"]').val();
+                                        if (tid < 0) {
+                                            //No id => means no value picked from the suggestion list => check text to be numeric
+                                            tid = $(this).children('input[name="tName"]').val();
+                                        }
+                                        $("#8f737bf55191ce39").prop("disabled", true);
+                                        if (!isNaN(tid) && isFinite(tid) && tid > 0 && tid % 1 === 0) {
+                                            console.log('redirect...');
+                                            window.location = "/aphia.php?p=taxdetails&id=" + tid;
+                                        } else {
+                                            $("#aphia-quick-search-form").submit();
+                                        }
+                                    });
+                                </script>
+                            </div>
+                            <input type="hidden" name="searchpar" value="0" />
+                            <input type="hidden" name="tComp" value="begins" />
+                            <input type="hidden" name="action" value="search" />
+                            <input type="hidden" name="rSkips" value="0" />
+                                                                                                                                <input type="hidden" name="marine" value="1" />
+                                                                                                    <input type="hidden" name="fossil" value="4" />
+                                                                                    </form>
+                    </div>
+                    <div class="aphia-nav-menu-table-cell-col2">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="/aphia.php?p=search"><span class="fa fa-search"></span>&nbsp;Taxa</a></li>
+                            <li><a href="/aphia.php?p=sources"><span class="fa fa-graduation-cap fa-1x"></span>&nbsp;Literature</a></li>
+                            <li><a href="/aphia.php?p=checklist"><span class="fa fa-map fa-1x"></span>&nbsp;Distribution</a></li>
+                            <li><a href="/aphia.php?p=specimens"><span class="fa fa-tags fa-1x"></span>&nbsp;Specimen</a></li>
+                                                        <li><a href="/aphia.php?p=editors"><span class="fa fa-users fa-1x"></span>&nbsp;Editors</a></li>
+                            <li class="active"><a href="/aphia.php?p=stats"><span class="fa fa-line-chart fa-1x"></span>&nbsp;Statistics</a></li>
+                            <li class="dropdown">
+                                <a class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false"><span class="fa fa-gears fa-1x"></span>&nbsp;Tools
+                                    <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="/aphia.php?p=match"><span class="fa fa-binoculars fa-1x"></span>&nbsp;Match taxa</a></li>
+                                    <li><a href="/aphia.php?p=webservice"><span class="fa fa-globe fa-1x"></span>&nbsp;Webservices</a></li>
+                                    <li><a href="/aphia.php?p=browser"><span class="fa fa-sitemap fa-1x"></span>&nbsp;Taxon tree</a></li>
+                                    <li><a href="/aphia.php?p=idkeys"><span class="fa fa-puzzle-piece fa-1x"></span>&nbsp;IDKeys</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/aphia.php?p=manual"><span class="fa fa-book fa-1x"></span>&nbsp;Manual</a></li>
+                                                                                                                                                                                                <li><a href="/aphia.php?p=login&amp;decodetype=1&amp;redirect=L2FwaGlhLnBocD9wPXN0YXRz"><span class="fa fa-lock fa-1x"></span>&nbsp;Log in</a></li>
+                                                    </ul>
+                    </div>
+                </div>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </div>
+</div>
+<div class="container-fluid worms-content">
+<div class="row">
+                        <div class="worms_content_section worms_content_section_colored">
+                            
+<style>
+    .stats_name_column {
+        min-width: 300px;
+    }
+    .stats_name_column > span.text {
+        float: none;
+    }
+    .stats_name_column > span.text > div {
+        display: table-cell;
+    }
+    .pop > .img-responsive {
+        display: inline;
+    }
+
+</style>
+<h3>Statistics</h3>
+<div class="panel panel-transparent">
+    <div class="panel-body">
+        <div class="container-fluid form-horizontal">
+            <div class="row">
+                <div class="col-sm-7 col-md-8 col-lg-9">
+                    <div class="alert alert-info">
+                        <h4>Number of records in WoRMS</h4>
+                        <ul>
+                                                                                                <li><b>all names:</b> number of marine scientific names at all ranks (sum of species, genera, families,..., accepted and synonyms)</li>
+                                                                                                                                <li><b>all species:</b> number of marine species names (sum of accepted and synonyms) within the specific rank</li>
+                                                                                                                                <li><b>acc. species:</b> number of accepted marine species within the specific rank</li>
+                                                                                                                                <li><b>acc. species non-marine:</b> number of accepted non-marine species within the specific rank</li>
+                                                                                                                                <li><b>Checked names:</b> number of marine names (%) that have been checked by a Taxonomic Editor</li>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </ul>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-4 col-lg-3">
+                                        <a href="aphia.php?p=rss" target="_blank"><span class="fa fa-rss fa-1x"></span>&nbsp;Latest taxa additions</a><br/>
+                    <a href="aphia.php?p=rss&amp;type=edit" target="_blank"><span class="fa fa-rss fa-1x"></span>&nbsp;Latest taxa edits</a><br/>
+                    <a href="aphia.php?p=rss&amp;type=check" target="_blank"><span class="fa fa-rss fa-1x"></span>&nbsp;Latest taxa checked</a><br/>
+                    <a href="aphia.php?p=rss&amp;what=dr" target="_blank"><span class="fa fa-rss fa-1x"></span>&nbsp;Latest distribution additions</a><br/>
+                    <a href="aphia.php?p=rss&amp;what=notes" target="_blank"><span class="fa fa-rss fa-1x"></span>&nbsp;Latest note additions</a><br/>
+                    <a href="aphia.php?p=rss&amp;what=vernaculars" target="_blank"><span class="fa fa-rss fa-1x"></span>&nbsp;Latest vernacular additions</a><br/>
+                    <a href="aphia.php?p=rss&amp;what=sm" target="_blank"><span class="fa fa-rss fa-1x"></span>&nbsp;Latest specimen additions</a><br/>
+                    <a href="aphia.php?p=rss&amp;what=images" target="_blank"><span class="fa fa-rss fa-1x"></span>&nbsp;Latest image additions</a>
+                                            <br />
+                        <br />
+                        View stats on <a href="http://www.lifewatch.be/en/worms-stats" target="_blank">lifewatch</a>
+                                    </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div id="stats_taxa_counts">
+                                                <div id="toolbar">
+                            <p id="show_hide_container">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <label style="line-height: 1.42857;" class="checkbox-inline"><input type="checkbox" id="Fossil"  value="0">Fossil</label>
+                                                                                                                                                                                        <label style="line-height: 1.42857;" class="checkbox-inline"><input type="checkbox" id="Extant"  value="1" checked="checked">Extant</label>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </p>
+                        </div>
+                        <table
+                                id="table"
+                                data-toolbar="#toolbar"
+                                data-pagination="false"
+                                data-search="false"
+                                data-toggle="table"
+                                data-show-columns="true">
+                            <thead>
+                            <tr>
+                                <th data-field="name" class="stats_name_column">
+                                    Name
+                                </th>
+                                                                                                            <th data-align="right" data-field="all names" >
+                                            all names
+                                        </th>
+                                                                                                                                                <th data-align="right" data-field="all species" >
+                                            all species
+                                        </th>
+                                                                                                                                                <th data-align="right" data-field="acc. species" >
+                                            acc. species
+                                        </th>
+                                                                                                                                                <th data-align="right" data-field="acc. species non-marine" >
+                                            acc. species non-marine
+                                        </th>
+                                                                                                                                                <th data-align="right" data-field="Checked names" >
+                                            Checked names
+                                        </th>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </tr>
+                            </thead>
+                        </table>
+                        <script type="text/javascript">
+                            function getTableInstance() {
+                                return aphia_jquery('#table');
+                            }
+                            function getInitialData() {
+                                return [{"id":1,"pid":null,"name":"<div>&nbsp;<a href=\"aphia.php?p=taxdetails&id=1\" target=\"_blank\">Biota<\/a><\/div>","all names":"792 047","all species":"648 999","acc. species":"340 874","acc. species non-marine":"156 050","Checked names":"766 024 (97%)"},{"id":"1Fossil","pid":1,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"184 158","all species":"150 367","acc. species":"98 468","acc. species non-marine":"9 080","Checked names":"179 168 (97%)"},{"id":"1Extant","pid":1,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"607 889","all species":"498 632","acc. species":"242 406","acc. species non-marine":"146 970","Checked names":"586 856 (97%)"},{"id":2,"pid":1,"name":"<div>&nbsp;&nbsp;&nbsp;Kingdom&nbsp;<a href=\"aphia.php?p=taxdetails&id=2\" target=\"_blank\">Animalia<\/a><\/div>","all names":"631 521","all species":"523 812","acc. species":"264 239","acc. species non-marine":"102 830","Checked names":"624 593 (99%)"},{"id":"2Fossil","pid":2,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"115 254","all species":"92 966","acc. species":"57 095","acc. species non-marine":"8 867","Checked names":"111 621 (97%)"},{"id":"2Extant","pid":2,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"516 267","all species":"430 846","acc. species":"207 144","acc. species non-marine":"93 963","Checked names":"512 972 (99%)"},{"id":18814,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=18814\" target=\"_blank\">Acanthocephala<\/a><\/div>","all names":"1 049","all species":"864","acc. species":"514","acc. species non-marine":"9","Checked names":"1 049 (100%)"},{"id":"18814Fossil","pid":18814,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"18814Extant","pid":18814,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"1 049","all species":"864","acc. species":"514","acc. species non-marine":"9","Checked names":"1 049 (100%)"},{"id":882,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=882\" target=\"_blank\">Annelida<\/a><\/div>","all names":"31 700","all species":"26 888","acc. species":"14 906","acc. species non-marine":"1 039","Checked names":"31 573 (100%)"},{"id":"882Fossil","pid":882,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"1 425","all species":"1 152","acc. species":"1 080","acc. species non-marine":"9","Checked names":"1 425 (100%)"},{"id":"882Extant","pid":882,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"30 275","all species":"25 736","acc. species":"13 826","acc. species non-marine":"1 030","Checked names":"30 148 (100%)"},{"id":1065,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=1065\" target=\"_blank\">Arthropoda<\/a><\/div>","all names":"125 479","all species":"101 750","acc. species":"66 341","acc. species non-marine":"29 895","Checked names":"124 864 (100%)"},{"id":"1065Fossil","pid":1065,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"17 015","all species":"11 258","acc. species":"8 011","acc. species non-marine":"148","Checked names":"17 007 (100%)"},{"id":"1065Extant","pid":1065,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"108 464","all species":"90 492","acc. species":"58 330","acc. species non-marine":"29 747","Checked names":"107 857 (99%)"},{"id":1803,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=1803\" target=\"_blank\">Brachiopoda<\/a><\/div>","all names":"1 063","all species":"777","acc. species":"431","acc. species non-marine":"0","Checked names":"395 (37%)"},{"id":"1803Fossil","pid":1803,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"41","all species":"29","acc. species":"22","acc. species non-marine":"0","Checked names":"7 (17%)"},{"id":"1803Extant","pid":1803,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"1 022","all species":"748","acc. species":"409","acc. species non-marine":"0","Checked names":"388 (38%)"},{"id":146142,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=146142\" target=\"_blank\">Bryozoa<\/a><\/div>","all names":"31 090","all species":"26 845","acc. species":"22 218","acc. species non-marine":"116","Checked names":"31 047 (100%)"},{"id":"146142Fossil","pid":146142,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"19 830","all species":"17 396","acc. species":"15 768","acc. species non-marine":"10","Checked names":"19 830 (100%)"},{"id":"146142Extant","pid":146142,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"11 260","all species":"9 449","acc. species":"6 450","acc. species non-marine":"106","Checked names":"11 217 (100%)"},{"id":2081,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=2081\" target=\"_blank\">Chaetognatha<\/a><\/div>","all names":"360","all species":"296","acc. species":"132","acc. species non-marine":"0","Checked names":"360 (100%)"},{"id":"2081Fossil","pid":2081,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"2081Extant","pid":2081,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"360","all species":"296","acc. species":"132","acc. species non-marine":"0","Checked names":"360 (100%)"},{"id":1821,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=1821\" target=\"_blank\">Chordata<\/a><\/div>","all names":"74 872","all species":"62 770","acc. species":"24 011","acc. species non-marine":"17 302","Checked names":"74 236 (99%)"},{"id":"1821Fossil","pid":1821,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"129","all species":"79","acc. species":"60","acc. species non-marine":"1","Checked names":"125 (97%)"},{"id":"1821Extant","pid":1821,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"74 743","all species":"62 691","acc. species":"23 951","acc. species non-marine":"17 301","Checked names":"74 111 (99%)"},{"id":1267,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=1267\" target=\"_blank\">Cnidaria<\/a><\/div>","all names":"45 613","all species":"37 294","acc. species":"15 344","acc. species non-marine":"28","Checked names":"44 850 (98%)"},{"id":"1267Fossil","pid":1267,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"8 366","all species":"6 395","acc. species":"3 339","acc. species non-marine":"0","Checked names":"8 364 (100%)"},{"id":"1267Extant","pid":1267,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"37 247","all species":"30 899","acc. species":"12 005","acc. species non-marine":"28","Checked names":"36 486 (98%)"},{"id":1248,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=1248\" target=\"_blank\">Ctenophora<\/a><\/div>","all names":"483","all species":"311","acc. species":"216","acc. species non-marine":"0","Checked names":"479 (99%)"},{"id":"1248Fossil","pid":1248,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"26","all species":"11","acc. species":"11","acc. species non-marine":"0","Checked names":"26 (100%)"},{"id":"1248Extant","pid":1248,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"457","all species":"300","acc. species":"205","acc. species non-marine":"0","Checked names":"453 (99%)"},{"id":22586,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=22586\" target=\"_blank\">Cycliophora<\/a><\/div>","all names":"6","all species":"2","acc. species":"2","acc. species non-marine":"0","Checked names":"6 (100%)"},{"id":"22586Fossil","pid":22586,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"22586Extant","pid":22586,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"6","all species":"2","acc. species":"2","acc. species non-marine":"0","Checked names":"6 (100%)"},{"id":14221,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=14221\" target=\"_blank\">Dicyemida<\/a><\/div>","all names":"151","all species":"134","acc. species":"122","acc. species non-marine":"0","Checked names":"144 (95%)"},{"id":"14221Fossil","pid":14221,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"14221Extant","pid":14221,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"151","all species":"134","acc. species":"122","acc. species non-marine":"0","Checked names":"144 (95%)"},{"id":1806,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=1806\" target=\"_blank\">Echinodermata<\/a><\/div>","all names":"29 360","all species":"22 744","acc. species":"11 596","acc. species non-marine":"0","Checked names":"29 306 (100%)"},{"id":"1806Fossil","pid":1806,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"7 012","all species":"4 893","acc. species":"4 067","acc. species non-marine":"0","Checked names":"6 967 (99%)"},{"id":"1806Extant","pid":1806,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"22 348","all species":"17 851","acc. species":"7 529","acc. species non-marine":"0","Checked names":"22 339 (100%)"},{"id":1271,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=1271\" target=\"_blank\">Entoprocta<\/a><\/div>","all names":"281","all species":"252","acc. species":"198","acc. species non-marine":"2","Checked names":"281 (100%)"},{"id":"1271Fossil","pid":1271,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"1271Extant","pid":1271,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"281","all species":"252","acc. species":"198","acc. species non-marine":"2","Checked names":"281 (100%)"},{"id":2078,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=2078\" target=\"_blank\">Gastrotricha<\/a><\/div>","all names":"749","all species":"651","acc. species":"518","acc. species non-marine":"355","Checked names":"749 (100%)"},{"id":"2078Fossil","pid":2078,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"2078Extant","pid":2078,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"749","all species":"651","acc. species":"518","acc. species non-marine":"355","Checked names":"749 (100%)"},{"id":1335342,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=1335342\" target=\"_blank\">Gnathifera<\/a><\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"1","Checked names":"0 (0%)"},{"id":"1335342Fossil","pid":1335342,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"1335342Extant","pid":1335342,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"1","Checked names":"0 (0%)"},{"id":14262,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=14262\" target=\"_blank\">Gnathostomulida<\/a><\/div>","all names":"156","all species":"114","acc. species":"100","acc. species non-marine":"0","Checked names":"156 (100%)"},{"id":"14262Fossil","pid":14262,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"14262Extant","pid":14262,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"156","all species":"114","acc. species":"100","acc. species non-marine":"0","Checked names":"156 (100%)"},{"id":1818,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=1818\" target=\"_blank\">Hemichordata<\/a><\/div>","all names":"715","all species":"472","acc. species":"408","acc. species non-marine":"0","Checked names":"316 (44%)"},{"id":"1818Fossil","pid":1818,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"485","all species":"290","acc. species":"275","acc. species non-marine":"0","Checked names":"90 (19%)"},{"id":"1818Extant","pid":1818,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"230","all species":"182","acc. species":"133","acc. species non-marine":"0","Checked names":"226 (98%)"},{"id":101060,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=101060\" target=\"_blank\">Kinorhyncha<\/a><\/div>","all names":"662","all species":"585","acc. species":"344","acc. species non-marine":"0","Checked names":"662 (100%)"},{"id":"101060Fossil","pid":101060,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"4","all species":"2","acc. species":"2","acc. species non-marine":"0","Checked names":"4 (100%)"},{"id":"101060Extant","pid":101060,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"658","all species":"583","acc. species":"342","acc. species non-marine":"0","Checked names":"658 (100%)"},{"id":101061,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=101061\" target=\"_blank\">Loricifera<\/a><\/div>","all names":"65","all species":"45","acc. species":"45","acc. species non-marine":"0","Checked names":"35 (54%)"},{"id":"101061Fossil","pid":101061,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"101061Extant","pid":101061,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"65","all species":"45","acc. species":"45","acc. species non-marine":"0","Checked names":"35 (54%)"},{"id":51,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=51\" target=\"_blank\">Mollusca<\/a><\/div>","all names":"220 195","all species":"185 241","acc. species":"75 284","acc. species non-marine":"42 849","Checked names":"216 773 (98%)"},{"id":"51Fossil","pid":51,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"60 827","all species":"51 394","acc. species":"24 409","acc. species non-marine":"8 687","Checked names":"57 682 (95%)"},{"id":"51Extant","pid":51,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"159 368","all species":"133 847","acc. species":"50 875","acc. species non-marine":"34 162","Checked names":"159 091 (100%)"},{"id":799,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=799\" target=\"_blank\">Nematoda<\/a><\/div>","all names":"12 480","all species":"10 692","acc. species":"6 586","acc. species non-marine":"7 052","Checked names":"12 414 (99%)"},{"id":"799Fossil","pid":799,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"4","all species":"1","acc. species":"1","acc. species non-marine":"1","Checked names":"4 (100%)"},{"id":"799Extant","pid":799,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"12 476","all species":"10 691","acc. species":"6 585","acc. species non-marine":"7 051","Checked names":"12 410 (99%)"},{"id":162564,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=162564\" target=\"_blank\">Nematomorpha<\/a><\/div>","all names":"12","all species":"5","acc. species":"5","acc. species non-marine":"0","Checked names":"7 (58%)"},{"id":"162564Fossil","pid":162564,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"162564Extant","pid":162564,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"12","all species":"5","acc. species":"5","acc. species non-marine":"0","Checked names":"7 (58%)"},{"id":152391,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=152391\" target=\"_blank\">Nemertea<\/a><\/div>","all names":"2 420","all species":"1 953","acc. species":"1 336","acc. species non-marine":"13","Checked names":"2 382 (98%)"},{"id":"152391Fossil","pid":152391,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"4","all species":"2","acc. species":"2","acc. species non-marine":"0","Checked names":"4 (100%)"},{"id":"152391Extant","pid":152391,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"2 416","all species":"1 951","acc. species":"1 334","acc. species non-marine":"13","Checked names":"2 378 (98%)"},{"id":14220,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=14220\" target=\"_blank\">Orthonectida<\/a><\/div>","all names":"51","all species":"40","acc. species":"25","acc. species non-marine":"0","Checked names":"42 (82%)"},{"id":"14220Fossil","pid":14220,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"14220Extant","pid":14220,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"51","all species":"40","acc. species":"25","acc. species non-marine":"0","Checked names":"42 (82%)"},{"id":1789,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=1789\" target=\"_blank\">Phoronida<\/a><\/div>","all names":"60","all species":"52","acc. species":"13","acc. species non-marine":"0","Checked names":"53 (88%)"},{"id":"1789Fossil","pid":1789,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"1789Extant","pid":1789,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"60","all species":"52","acc. species":"13","acc. species non-marine":"0","Checked names":"53 (88%)"},{"id":22737,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=22737\" target=\"_blank\">Placozoa<\/a><\/div>","all names":"21","all species":"6","acc. species":"4","acc. species non-marine":"0","Checked names":"21 (100%)"},{"id":"22737Fossil","pid":22737,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"22737Extant","pid":22737,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"21","all species":"6","acc. species":"4","acc. species non-marine":"0","Checked names":"21 (100%)"},{"id":793,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=793\" target=\"_blank\">Platyhelminthes<\/a><\/div>","all names":"26 835","all species":"21 691","acc. species":"13 284","acc. species non-marine":"2 920","Checked names":"26 821 (100%)"},{"id":"793Fossil","pid":793,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"2","all species":"1","acc. species":"1","acc. species non-marine":"2","Checked names":"2 (100%)"},{"id":"793Extant","pid":793,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"26 833","all species":"21 690","acc. species":"13 283","acc. species non-marine":"2 918","Checked names":"26 819 (100%)"},{"id":558,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=558\" target=\"_blank\">Porifera<\/a><\/div>","all names":"23 973","all species":"20 207","acc. species":"9 331","acc. species non-marine":"241","Checked names":"23 973 (100%)"},{"id":"558Fossil","pid":558,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"53","all species":"44","acc. species":"32","acc. species non-marine":"7","Checked names":"53 (100%)"},{"id":"558Extant","pid":558,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"23 920","all species":"20 163","acc. species":"9 299","acc. species non-marine":"234","Checked names":"23 920 (100%)"},{"id":101063,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=101063\" target=\"_blank\">Priapulida<\/a><\/div>","all names":"59","all species":"38","acc. species":"22","acc. species non-marine":"0","Checked names":"59 (100%)"},{"id":"101063Fossil","pid":101063,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"101063Extant","pid":101063,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"59","all species":"38","acc. species":"22","acc. species non-marine":"0","Checked names":"59 (100%)"},{"id":14260,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=14260\" target=\"_blank\">Rotifera<\/a><\/div>","all names":"324","all species":"215","acc. species":"183","acc. species non-marine":"118","Checked names":"321 (99%)"},{"id":"14260Fossil","pid":14260,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"1","all species":"1","acc. species":"1","acc. species non-marine":"0","Checked names":"1 (100%)"},{"id":"14260Extant","pid":14260,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"323","all species":"214","acc. species":"182","acc. species non-marine":"118","Checked names":"320 (99%)"},{"id":1276,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=1276\" target=\"_blank\">Tardigrada<\/a><\/div>","all names":"386","all species":"270","acc. species":"251","acc. species non-marine":"888","Checked names":"382 (99%)"},{"id":"1276Fossil","pid":1276,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"2","Checked names":"0 (0%)"},{"id":"1276Extant","pid":1276,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"386","all species":"270","acc. species":"251","acc. species non-marine":"886","Checked names":"382 (99%)"},{"id":592916,"pid":2,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=592916\" target=\"_blank\">Xenacoelomorpha<\/a><\/div>","all names":"761","all species":"591","acc. species":"456","acc. species non-marine":"2","Checked names":"760 (100%)"},{"id":"592916Fossil","pid":592916,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"2","all species":"1","acc. species":"1","acc. species non-marine":"0","Checked names":"2 (100%)"},{"id":"592916Extant","pid":592916,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"759","all species":"590","acc. species":"455","acc. species non-marine":"2","Checked names":"758 (100%)"},{"id":6,"pid":1,"name":"<div>&nbsp;&nbsp;&nbsp;Kingdom&nbsp;<a href=\"aphia.php?p=taxdetails&id=6\" target=\"_blank\">Bacteria<\/a><\/div>","all names":"4 365","all species":"2 851","acc. species":"2 275","acc. species non-marine":"3 312","Checked names":"2 031 (47%)"},{"id":"6Fossil","pid":6,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"233","all species":"152","acc. species":"145","acc. species non-marine":"2","Checked names":"222 (95%)"},{"id":"6Extant","pid":6,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"4 132","all species":"2 699","acc. species":"2 130","acc. species non-marine":"3 310","Checked names":"1 809 (44%)"},{"id":564402,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=564402\" target=\"_blank\">Acidobacteria<\/a><\/div>","all names":"5","all species":"1","acc. species":"1","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"564402Fossil","pid":564402,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"564402Extant","pid":564402,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"5","all species":"1","acc. species":"1","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":178057,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=178057\" target=\"_blank\">Actinobacteria<\/a><\/div>","all names":"272","all species":"84","acc. species":"83","acc. species non-marine":"1","Checked names":"0 (0%)"},{"id":"178057Fossil","pid":178057,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"178057Extant","pid":178057,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"272","all species":"84","acc. species":"83","acc. species non-marine":"1","Checked names":"0 (0%)"},{"id":559819,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=559819\" target=\"_blank\">Aquificae<\/a><\/div>","all names":"27","all species":"15","acc. species":"15","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"559819Fossil","pid":559819,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"559819Extant","pid":559819,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"27","all species":"15","acc. species":"15","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":559844,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=559844\" target=\"_blank\">Bacteroidetes<\/a><\/div>","all names":"378","all species":"238","acc. species":"238","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"559844Fossil","pid":559844,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"559844Extant","pid":559844,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"378","all species":"238","acc. species":"238","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":564158,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=564158\" target=\"_blank\">Caldiserica<\/a><\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"564158Fossil","pid":564158,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"564158Extant","pid":564158,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":564164,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=564164\" target=\"_blank\">Chlamydiae<\/a><\/div>","all names":"5","all species":"2","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"564164Fossil","pid":564164,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"564164Extant","pid":564164,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"5","all species":"2","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":564139,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=564139\" target=\"_blank\">Chlorobi<\/a><\/div>","all names":"14","all species":"7","acc. species":"7","acc. species non-marine":"2","Checked names":"1 (7%)"},{"id":"564139Fossil","pid":564139,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"564139Extant","pid":564139,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"14","all species":"7","acc. species":"7","acc. species non-marine":"2","Checked names":"1 (7%)"},{"id":564342,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=564342\" target=\"_blank\">Chloroflexi<\/a><\/div>","all names":"11","all species":"4","acc. species":"4","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"564342Fossil","pid":564342,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"564342Extant","pid":564342,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"11","all species":"4","acc. species":"4","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":146537,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=146537\" target=\"_blank\">Cyanobacteria<\/a><\/div>","all names":"2 073","all species":"1 493","acc. species":"957","acc. species non-marine":"3 279","Checked names":"2 029 (98%)"},{"id":"146537Fossil","pid":146537,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"233","all species":"152","acc. species":"145","acc. species non-marine":"2","Checked names":"222 (95%)"},{"id":"146537Extant","pid":146537,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"1 840","all species":"1 341","acc. species":"812","acc. species non-marine":"3 277","Checked names":"1 807 (98%)"},{"id":564353,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=564353\" target=\"_blank\">Deferribacteres<\/a><\/div>","all names":"11","all species":"5","acc. species":"5","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"564353Fossil","pid":564353,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"564353Extant","pid":564353,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"11","all species":"5","acc. species":"5","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":564386,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=564386\" target=\"_blank\">Deinococcus-Thermus<\/a><\/div>","all names":"10","all species":"4","acc. species":"4","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"564386Fossil","pid":564386,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"564386Extant","pid":564386,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"10","all species":"4","acc. species":"4","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":571254,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=571254\" target=\"_blank\">Elusimicrobia<\/a><\/div>","all names":"4","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"571254Fossil","pid":571254,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"571254Extant","pid":571254,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"4","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":571284,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=571284\" target=\"_blank\">Fibrobacteres<\/a><\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"571284Fossil","pid":571284,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"571284Extant","pid":571284,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":377975,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=377975\" target=\"_blank\">Firmicutes<\/a><\/div>","all names":"155","all species":"92","acc. species":"91","acc. species non-marine":"2","Checked names":"0 (0%)"},{"id":"377975Fossil","pid":377975,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"377975Extant","pid":377975,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"155","all species":"92","acc. species":"91","acc. species non-marine":"2","Checked names":"0 (0%)"},{"id":565446,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=565446\" target=\"_blank\">Fusobacteria<\/a><\/div>","all names":"10","all species":"4","acc. species":"4","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"565446Fossil","pid":565446,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"565446Extant","pid":565446,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"10","all species":"4","acc. species":"4","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":571298,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=571298\" target=\"_blank\">Gemmatimonadetes<\/a><\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"571298Fossil","pid":571298,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"571298Extant","pid":571298,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":564169,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=564169\" target=\"_blank\">Lentisphaerae<\/a><\/div>","all names":"4","all species":"1","acc. species":"1","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"564169Fossil","pid":564169,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"564169Extant","pid":564169,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"4","all species":"1","acc. species":"1","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":571373,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=571373\" target=\"_blank\">Nitrospirae<\/a><\/div>","all names":"5","all species":"1","acc. species":"1","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"571373Fossil","pid":571373,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"571373Extant","pid":571373,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"5","all species":"1","acc. species":"1","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":565455,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=565455\" target=\"_blank\">Planctomycetes<\/a><\/div>","all names":"16","all species":"6","acc. species":"5","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"565455Fossil","pid":565455,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"565455Extant","pid":565455,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"16","all species":"6","acc. species":"5","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":178054,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=178054\" target=\"_blank\">Proteobacteria<\/a><\/div>","all names":"1 237","all species":"840","acc. species":"809","acc. species non-marine":"2","Checked names":"0 (0%)"},{"id":"178054Fossil","pid":178054,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"178054Extant","pid":178054,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"1 237","all species":"840","acc. species":"809","acc. species non-marine":"2","Checked names":"0 (0%)"},{"id":566338,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=566338\" target=\"_blank\">Spirochaetes<\/a><\/div>","all names":"5","all species":"1","acc. species":"1","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"566338Fossil","pid":566338,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"566338Extant","pid":566338,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"5","all species":"1","acc. species":"1","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":566905,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=566905\" target=\"_blank\">Synergistetes<\/a><\/div>","all names":"8","all species":"3","acc. species":"3","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"566905Fossil","pid":566905,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"566905Extant","pid":566905,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"8","all species":"3","acc. species":"3","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":567359,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=567359\" target=\"_blank\">Tenericutes<\/a><\/div>","all names":"10","all species":"3","acc. species":"2","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"567359Fossil","pid":567359,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"567359Extant","pid":567359,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"10","all species":"3","acc. species":"2","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":567370,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=567370\" target=\"_blank\">Thermodesulfobacteria<\/a><\/div>","all names":"7","all species":"2","acc. species":"2","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"567370Fossil","pid":567370,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"567370Extant","pid":567370,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"7","all species":"2","acc. species":"2","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":414721,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=414721\" target=\"_blank\">Thermotogae<\/a><\/div>","all names":"21","all species":"13","acc. species":"13","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"414721Fossil","pid":414721,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"414721Extant","pid":414721,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"21","all species":"13","acc. species":"13","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":564175,"pid":6,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=564175\" target=\"_blank\">Verrucomicrobia<\/a><\/div>","all names":"43","all species":"25","acc. species":"25","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"564175Fossil","pid":564175,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"564175Extant","pid":564175,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"43","all species":"25","acc. species":"25","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":12,"pid":1,"name":"<div>&nbsp;&nbsp;&nbsp;Kingdom&nbsp;<a href=\"aphia.php?p=taxdetails&id=12\" target=\"_blank\">Biota incertae sedis<\/a><\/div>","all names":"71","all species":"43","acc. species":"20","acc. species non-marine":"3","Checked names":"61 (86%)"},{"id":"12Fossil","pid":12,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"51","all species":"30","acc. species":"19","acc. species non-marine":"0","Checked names":"51 (100%)"},{"id":"12Extant","pid":12,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"20","all species":"13","acc. species":"1","acc. species non-marine":"3","Checked names":"10 (50%)"},{"id":1633755,"pid":12,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=1633755\" target=\"_blank\">Solenopora<\/a><\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"1633755Fossil","pid":1633755,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"1633755Extant","pid":1633755,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":7,"pid":1,"name":"<div>&nbsp;&nbsp;&nbsp;Kingdom&nbsp;<a href=\"aphia.php?p=taxdetails&id=7\" target=\"_blank\">Chromista<\/a><\/div>","all names":"120 235","all species":"95 906","acc. species":"60 878","acc. species non-marine":"5 009","Checked names":"106 571 (89%)"},{"id":"7Fossil","pid":7,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"67 494","all species":"56 248","acc. species":"40 476","acc. species non-marine":"65","Checked names":"66 405 (98%)"},{"id":"7Extant","pid":7,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"52 741","all species":"39 658","acc. species":"20 402","acc. species non-marine":"4 944","Checked names":"40 166 (76%)"},{"id":148898,"pid":7,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=148898\" target=\"_blank\">Bacillariophyta<\/a><\/div>","all names":"12 861","all species":"9 723","acc. species":"1 992","acc. species non-marine":"2 581","Checked names":"1 744 (14%)"},{"id":"148898Fossil","pid":148898,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"1 419","all species":"1 091","acc. species":"248","acc. species non-marine":"62","Checked names":"410 (29%)"},{"id":"148898Extant","pid":148898,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"11 442","all species":"8 632","acc. species":"1 744","acc. species non-marine":"2 519","Checked names":"1 334 (12%)"},{"id":449151,"pid":7,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=449151\" target=\"_blank\">Bigyra<\/a><\/div>","all names":"157","all species":"91","acc. species":"73","acc. species non-marine":"48","Checked names":"150 (96%)"},{"id":"449151Fossil","pid":449151,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"449151Extant","pid":449151,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"157","all species":"91","acc. species":"73","acc. species non-marine":"48","Checked names":"150 (96%)"},{"id":562852,"pid":7,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=562852\" target=\"_blank\">Cercozoa<\/a><\/div>","all names":"490","all species":"289","acc. species":"249","acc. species non-marine":"9","Checked names":"437 (89%)"},{"id":"562852Fossil","pid":562852,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"1","all species":"1","acc. species":"1","acc. species non-marine":"0","Checked names":"1 (100%)"},{"id":"562852Extant","pid":562852,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"489","all species":"288","acc. species":"248","acc. species non-marine":"9","Checked names":"436 (89%)"},{"id":1636199,"pid":7,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=1636199\" target=\"_blank\">Chromeridophyta<\/a><\/div>","all names":"6","all species":"2","acc. species":"1","acc. species non-marine":"0","Checked names":"2 (33%)"},{"id":"1636199Fossil","pid":1636199,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"1636199Extant","pid":1636199,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"6","all species":"2","acc. species":"1","acc. species non-marine":"0","Checked names":"2 (33%)"},{"id":11,"pid":7,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=11\" target=\"_blank\">Ciliophora<\/a><\/div>","all names":"4 170","all species":"3 157","acc. species":"2 667","acc. species non-marine":"340","Checked names":"3 770 (90%)"},{"id":"11Fossil","pid":11,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"11Extant","pid":11,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"4 170","all species":"3 157","acc. species":"2 667","acc. species non-marine":"340","Checked names":"3 770 (90%)"},{"id":17638,"pid":7,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=17638\" target=\"_blank\">Cryptophyta<\/a><\/div>","all names":"225","all species":"164","acc. species":"104","acc. species non-marine":"66","Checked names":"208 (92%)"},{"id":"17638Fossil","pid":17638,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"17638Extant","pid":17638,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"225","all species":"164","acc. species":"104","acc. species non-marine":"66","Checked names":"208 (92%)"},{"id":1410,"pid":7,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=1410\" target=\"_blank\">Foraminifera<\/a><\/div>","all names":"84 736","all species":"69 730","acc. species":"48 810","acc. species non-marine":"4","Checked names":"84 736 (100%)"},{"id":"1410Fossil","pid":1410,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"65 573","all species":"54 768","acc. species":"39 926","acc. species non-marine":"0","Checked names":"65 573 (100%)"},{"id":"1410Extant","pid":1410,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"19 163","all species":"14 962","acc. species":"8 884","acc. species non-marine":"4","Checked names":"19 163 (100%)"},{"id":369190,"pid":7,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=369190\" target=\"_blank\">Haptophyta<\/a><\/div>","all names":"841","all species":"634","acc. species":"430","acc. species non-marine":"16","Checked names":"808 (96%)"},{"id":"369190Fossil","pid":369190,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"95","all species":"69","acc. species":"52","acc. species non-marine":"0","Checked names":"79 (83%)"},{"id":"369190Extant","pid":369190,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"746","all species":"565","acc. species":"378","acc. species non-marine":"16","Checked names":"729 (98%)"},{"id":341274,"pid":7,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=341274\" target=\"_blank\">Heliozoa<\/a><\/div>","all names":"18","all species":"7","acc. species":"7","acc. species non-marine":"0","Checked names":"9 (50%)"},{"id":"341274Fossil","pid":341274,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"341274Extant","pid":341274,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"18","all species":"7","acc. species":"7","acc. species non-marine":"0","Checked names":"9 (50%)"},{"id":450030,"pid":7,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=450030\" target=\"_blank\">Myzozoa<\/a><\/div>","all names":"6 211","all species":"5 075","acc. species":"3 324","acc. species non-marine":"377","Checked names":"4 896 (79%)"},{"id":"450030Fossil","pid":450030,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"247","all species":"214","acc. species":"179","acc. species non-marine":"1","Checked names":"187 (76%)"},{"id":"450030Extant","pid":450030,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"5 964","all species":"4 861","acc. species":"3 145","acc. species non-marine":"376","Checked names":"4 709 (79%)"},{"id":345465,"pid":7,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=345465\" target=\"_blank\">Ochrophyta<\/a><\/div>","all names":"9 337","all species":"6 338","acc. species":"2 702","acc. species non-marine":"1 568","Checked names":"8 985 (96%)"},{"id":"345465Fossil","pid":345465,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"159","all species":"105","acc. species":"70","acc. species non-marine":"2","Checked names":"155 (97%)"},{"id":"345465Extant","pid":345465,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"9 178","all species":"6 233","acc. species":"2 632","acc. species non-marine":"1 566","Checked names":"8 830 (96%)"},{"id":22154,"pid":7,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=22154\" target=\"_blank\">Oomycota<\/a><\/div>","all names":"118","all species":"60","acc. species":"45","acc. species non-marine":"0","Checked names":"113 (96%)"},{"id":"22154Fossil","pid":22154,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"22154Extant","pid":22154,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"118","all species":"60","acc. species":"45","acc. species non-marine":"0","Checked names":"113 (96%)"},{"id":582421,"pid":7,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=582421\" target=\"_blank\">Radiozoa<\/a><\/div>","all names":"1 022","all species":"629","acc. species":"467","acc. species non-marine":"0","Checked names":"685 (67%)"},{"id":"582421Fossil","pid":582421,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"582421Extant","pid":582421,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"1 022","all species":"629","acc. species":"467","acc. species non-marine":"0","Checked names":"685 (67%)"},{"id":3,"pid":1,"name":"<div>&nbsp;&nbsp;&nbsp;Kingdom&nbsp;<a href=\"aphia.php?p=taxdetails&id=3\" target=\"_blank\">Plantae<\/a><\/div>","all names":"30 540","all species":"23 079","acc. species":"10 864","acc. species non-marine":"43 651","Checked names":"28 321 (93%)"},{"id":"3Fossil","pid":3,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"567","all species":"487","acc. species":"379","acc. species non-marine":"144","Checked names":"529 (93%)"},{"id":"3Extant","pid":3,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"29 973","all species":"22 592","acc. species":"10 485","acc. species non-marine":"43 507","Checked names":"27 792 (93%)"},{"id":886300,"pid":3,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum (Division)&nbsp;<a href=\"aphia.php?p=taxdetails&id=886300\" target=\"_blank\">Anthocerotophyta<\/a><\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"886300Fossil","pid":886300,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"886300Extant","pid":886300,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":147480,"pid":3,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum (Division)&nbsp;<a href=\"aphia.php?p=taxdetails&id=147480\" target=\"_blank\">Bryophyta<\/a><\/div>","all names":"19","all species":"4","acc. species":"4","acc. species non-marine":"100","Checked names":"0 (0%)"},{"id":"147480Fossil","pid":147480,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"147480Extant","pid":147480,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"19","all species":"4","acc. species":"4","acc. species non-marine":"100","Checked names":"0 (0%)"},{"id":368664,"pid":3,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum (Division)&nbsp;<a href=\"aphia.php?p=taxdetails&id=368664\" target=\"_blank\">Charophyta<\/a><\/div>","all names":"342","all species":"152","acc. species":"69","acc. species non-marine":"5 631","Checked names":"335 (98%)"},{"id":"368664Fossil","pid":368664,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"18","all species":"17","acc. species":"14","acc. species non-marine":"143","Checked names":"17 (94%)"},{"id":"368664Extant","pid":368664,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"324","all species":"135","acc. species":"55","acc. species non-marine":"5 488","Checked names":"318 (98%)"},{"id":801,"pid":3,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum (Division)&nbsp;<a href=\"aphia.php?p=taxdetails&id=801\" target=\"_blank\">Chlorophyta<\/a><\/div>","all names":"7 728","all species":"5 326","acc. species":"2 761","acc. species non-marine":"4 326","Checked names":"6 715 (87%)"},{"id":"801Fossil","pid":801,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"382","all species":"313","acc. species":"245","acc. species non-marine":"0","Checked names":"373 (98%)"},{"id":"801Extant","pid":801,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"7 346","all species":"5 013","acc. species":"2 516","acc. species non-marine":"4 326","Checked names":"6 342 (86%)"},{"id":599656,"pid":3,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum (Division)&nbsp;<a href=\"aphia.php?p=taxdetails&id=599656\" target=\"_blank\">Glaucophyta<\/a><\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"18","Checked names":"0 (0%)"},{"id":"599656Fossil","pid":599656,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"599656Extant","pid":599656,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"18","Checked names":"0 (0%)"},{"id":1486517,"pid":3,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum (Division)&nbsp;<a href=\"aphia.php?p=taxdetails&id=1486517\" target=\"_blank\">Glaucophyta<\/a><\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"1486517Fossil","pid":1486517,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"1486517Extant","pid":1486517,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":742162,"pid":3,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum (Division)&nbsp;<a href=\"aphia.php?p=taxdetails&id=742162\" target=\"_blank\">Marchantiophyta<\/a><\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"6","Checked names":"0 (0%)"},{"id":"742162Fossil","pid":742162,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"742162Extant","pid":742162,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"6","Checked names":"0 (0%)"},{"id":1648792,"pid":3,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum (Division)&nbsp;<a href=\"aphia.php?p=taxdetails&id=1648792\" target=\"_blank\">Prasinodermatophyta<\/a><\/div>","all names":"17","all species":"9","acc. species":"6","acc. species non-marine":"1","Checked names":"16 (94%)"},{"id":"1648792Fossil","pid":1648792,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"1648792Extant","pid":1648792,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"17","all species":"9","acc. species":"6","acc. species non-marine":"1","Checked names":"16 (94%)"},{"id":1486520,"pid":3,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum (Division)&nbsp;<a href=\"aphia.php?p=taxdetails&id=1486520\" target=\"_blank\">Rhodelphidia<\/a><\/div>","all names":"4","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"1486520Fossil","pid":1486520,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"1486520Extant","pid":1486520,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"4","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":852,"pid":3,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum (Division)&nbsp;<a href=\"aphia.php?p=taxdetails&id=852\" target=\"_blank\">Rhodophyta<\/a><\/div>","all names":"21 591","all species":"17 061","acc. species":"7 690","acc. species non-marine":"318","Checked names":"20 749 (96%)"},{"id":"852Fossil","pid":852,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"133","all species":"129","acc. species":"98","acc. species non-marine":"1","Checked names":"114 (86%)"},{"id":"852Extant","pid":852,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"21 458","all species":"16 932","acc. species":"7 592","acc. species non-marine":"317","Checked names":"20 635 (96%)"},{"id":596326,"pid":3,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum (Division)&nbsp;<a href=\"aphia.php?p=taxdetails&id=596326\" target=\"_blank\">Tracheophyta<\/a><\/div>","all names":"741","all species":"466","acc. species":"298","acc. species non-marine":"33 238","Checked names":"436 (59%)"},{"id":"596326Fossil","pid":596326,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"3","all species":"3","acc. species":"0","acc. species non-marine":"0","Checked names":"3 (100%)"},{"id":"596326Extant","pid":596326,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"738","all species":"463","acc. species":"298","acc. species non-marine":"33 238","Checked names":"433 (59%)"},{"id":5,"pid":1,"name":"<div>&nbsp;&nbsp;&nbsp;Kingdom&nbsp;<a href=\"aphia.php?p=taxdetails&id=5\" target=\"_blank\">Protozoa<\/a><\/div>","all names":"1 951","all species":"1 349","acc. species":"990","acc. species non-marine":"1 148","Checked names":"1 362 (70%)"},{"id":"5Fossil","pid":5,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"559","all species":"484","acc. species":"354","acc. species non-marine":"1","Checked names":"340 (61%)"},{"id":"5Extant","pid":5,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"1 392","all species":"865","acc. species":"636","acc. species non-marine":"1 147","Checked names":"1 022 (73%)"},{"id":1340068,"pid":5,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=1340068\" target=\"_blank\">Acritarcha<\/a><\/div>","all names":"420","all species":"363","acc. species":"268","acc. species non-marine":"0","Checked names":"257 (61%)"},{"id":"1340068Fossil","pid":1340068,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"417","all species":"361","acc. species":"268","acc. species non-marine":"0","Checked names":"254 (61%)"},{"id":"1340068Extant","pid":1340068,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"3","all species":"2","acc. species":"0","acc. species non-marine":"0","Checked names":"3 (100%)"},{"id":391848,"pid":5,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=391848\" target=\"_blank\">Amoebozoa<\/a><\/div>","all names":"255","all species":"138","acc. species":"117","acc. species non-marine":"13","Checked names":"164 (64%)"},{"id":"391848Fossil","pid":391848,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"2","all species":"2","acc. species":"2","acc. species non-marine":"0","Checked names":"1 (50%)"},{"id":"391848Extant","pid":391848,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"253","all species":"136","acc. species":"115","acc. species non-marine":"13","Checked names":"163 (64%)"},{"id":582162,"pid":5,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=582162\" target=\"_blank\">Apusozoa<\/a><\/div>","all names":"12","all species":"4","acc. species":"2","acc. species non-marine":"1","Checked names":"11 (92%)"},{"id":"582162Fossil","pid":582162,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"582162Extant","pid":582162,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"12","all species":"4","acc. species":"2","acc. species non-marine":"1","Checked names":"11 (92%)"},{"id":562870,"pid":5,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=562870\" target=\"_blank\">Choanozoa<\/a><\/div>","all names":"300","all species":"202","acc. species":"147","acc. species non-marine":"54","Checked names":"267 (89%)"},{"id":"562870Fossil","pid":562870,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"562870Extant","pid":562870,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"300","all species":"202","acc. species":"147","acc. species non-marine":"54","Checked names":"267 (89%)"},{"id":536202,"pid":5,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=536202\" target=\"_blank\">Euglenozoa<\/a><\/div>","all names":"474","all species":"348","acc. species":"262","acc. species non-marine":"814","Checked names":"376 (79%)"},{"id":"536202Fossil","pid":536202,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"1","Checked names":"0 (0%)"},{"id":"536202Extant","pid":536202,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"474","all species":"348","acc. species":"262","acc. species non-marine":"813","Checked names":"376 (79%)"},{"id":1486572,"pid":5,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=1486572\" target=\"_blank\">Hemimastigophora<\/a><\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"1486572Fossil","pid":1486572,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"1486572Extant","pid":1486572,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":582163,"pid":5,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=582163\" target=\"_blank\">Loukozoa<\/a><\/div>","all names":"6","all species":"2","acc. species":"2","acc. species non-marine":"0","Checked names":"6 (100%)"},{"id":"582163Fossil","pid":582163,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"582163Extant","pid":582163,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"6","all species":"2","acc. species":"2","acc. species non-marine":"0","Checked names":"6 (100%)"},{"id":562592,"pid":5,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=562592\" target=\"_blank\">Metamonada<\/a><\/div>","all names":"43","all species":"18","acc. species":"14","acc. species non-marine":"8","Checked names":"20 (47%)"},{"id":"562592Fossil","pid":562592,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"562592Extant","pid":562592,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"43","all species":"18","acc. species":"14","acc. species non-marine":"8","Checked names":"20 (47%)"},{"id":451648,"pid":5,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=451648\" target=\"_blank\">Percolozoa<\/a><\/div>","all names":"37","all species":"18","acc. species":"16","acc. species non-marine":"1","Checked names":"27 (73%)"},{"id":"451648Fossil","pid":451648,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"451648Extant","pid":451648,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"37","all species":"18","acc. species":"16","acc. species non-marine":"1","Checked names":"27 (73%)"},{"id":730531,"pid":5,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=730531\" target=\"_blank\">Picozoa<\/a><\/div>","all names":"5","all species":"1","acc. species":"1","acc. species non-marine":"0","Checked names":"1 (20%)"},{"id":"730531Fossil","pid":730531,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"730531Extant","pid":730531,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"5","all species":"1","acc. species":"1","acc. species non-marine":"0","Checked names":"1 (20%)"},{"id":1486539,"pid":5,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=1486539\" target=\"_blank\">Sulcozoa<\/a><\/div>","all names":"16","all species":"2","acc. species":"2","acc. species non-marine":"4","Checked names":"3 (19%)"},{"id":"1486539Fossil","pid":1486539,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"1486539Extant","pid":1486539,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"16","all species":"2","acc. species":"2","acc. species non-marine":"4","Checked names":"3 (19%)"},{"id":8,"pid":1,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kingdom&nbsp;<a href=\"aphia.php?p=taxdetails&id=8\" target=\"_blank\">Archaea<\/a><\/div>","all names":"226","all species":"117","acc. species":"117","acc. species non-marine":"1","Checked names":"0 (0%)"},{"id":"8Fossil","pid":8,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"8Extant","pid":8,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"226","all species":"117","acc. species":"117","acc. species non-marine":"1","Checked names":"0 (0%)"},{"id":559440,"pid":8,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=559440\" target=\"_blank\">Crenarchaeota<\/a><\/div>","all names":"39","all species":"17","acc. species":"17","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"559440Fossil","pid":559440,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"559440Extant","pid":559440,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"39","all species":"17","acc. species":"17","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":416226,"pid":8,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=416226\" target=\"_blank\">Euryarchaeota<\/a><\/div>","all names":"168","all species":"96","acc. species":"96","acc. species non-marine":"1","Checked names":"0 (0%)"},{"id":"416226Fossil","pid":416226,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"416226Extant","pid":416226,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"168","all species":"96","acc. species":"96","acc. species non-marine":"1","Checked names":"0 (0%)"},{"id":559427,"pid":8,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=559427\" target=\"_blank\">Korarchaeota<\/a><\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"559427Fossil","pid":559427,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"559427Extant","pid":559427,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":1661067,"pid":8,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=1661067\" target=\"_blank\">Nanoarchaeota<\/a><\/div>","all names":"5","all species":"1","acc. species":"1","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"1661067Fossil","pid":1661067,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"1661067Extant","pid":1661067,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"5","all species":"1","acc. species":"1","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":559429,"pid":8,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum&nbsp;<a href=\"aphia.php?p=taxdetails&id=559429\" target=\"_blank\">Thaumarchaeota<\/a><\/div>","all names":"10","all species":"3","acc. species":"3","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"559429Fossil","pid":559429,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"559429Extant","pid":559429,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"10","all species":"3","acc. species":"3","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":4,"pid":1,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kingdom&nbsp;<a href=\"aphia.php?p=taxdetails&id=4\" target=\"_blank\">Fungi<\/a><\/div>","all names":"2 901","all species":"1 727","acc. species":"1 376","acc. species non-marine":"76","Checked names":"2 895 (100%)"},{"id":"4Fossil","pid":4,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"1","Checked names":"0 (0%)"},{"id":"4Extant","pid":4,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"2 901","all species":"1 727","acc. species":"1 376","acc. species non-marine":"75","Checked names":"2 895 (100%)"},{"id":21891,"pid":4,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum (Division)&nbsp;<a href=\"aphia.php?p=taxdetails&id=21891\" target=\"_blank\">Ascomycota<\/a><\/div>","all names":"2 170","all species":"1 344","acc. species":"1 026","acc. species non-marine":"26","Checked names":"2 166 (100%)"},{"id":"21891Fossil","pid":21891,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"21891Extant","pid":21891,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"2 170","all species":"1 344","acc. species":"1 026","acc. species non-marine":"26","Checked names":"2 166 (100%)"},{"id":21890,"pid":4,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum (Division)&nbsp;<a href=\"aphia.php?p=taxdetails&id=21890\" target=\"_blank\">Basidiomycota<\/a><\/div>","all names":"251","all species":"95","acc. species":"91","acc. species non-marine":"28","Checked names":"250 (100%)"},{"id":"21890Fossil","pid":21890,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"21890Extant","pid":21890,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"251","all species":"95","acc. species":"91","acc. species non-marine":"28","Checked names":"250 (100%)"},{"id":162971,"pid":4,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum (Division)&nbsp;<a href=\"aphia.php?p=taxdetails&id=162971\" target=\"_blank\">Chytridiomycota<\/a><\/div>","all names":"63","all species":"30","acc. species":"28","acc. species non-marine":"0","Checked names":"63 (100%)"},{"id":"162971Fossil","pid":162971,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"162971Extant","pid":162971,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"63","all species":"30","acc. species":"28","acc. species non-marine":"0","Checked names":"63 (100%)"},{"id":988435,"pid":4,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum (Division)&nbsp;<a href=\"aphia.php?p=taxdetails&id=988435\" target=\"_blank\">Glomeromycota<\/a><\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"988435Fossil","pid":988435,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"988435Extant","pid":988435,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":391932,"pid":4,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum (Division)&nbsp;<a href=\"aphia.php?p=taxdetails&id=391932\" target=\"_blank\">Microsporidia<\/a><\/div>","all names":"367","all species":"245","acc. species":"219","acc. species non-marine":"13","Checked names":"367 (100%)"},{"id":"391932Fossil","pid":391932,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"391932Extant","pid":391932,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"367","all species":"245","acc. species":"219","acc. species non-marine":"13","Checked names":"367 (100%)"},{"id":21889,"pid":4,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phylum (Division)&nbsp;<a href=\"aphia.php?p=taxdetails&id=21889\" target=\"_blank\">Zygomycota<\/a><\/div>","all names":"31","all species":"8","acc. species":"8","acc. species non-marine":"1","Checked names":"31 (100%)"},{"id":"21889Fossil","pid":21889,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"21889Extant","pid":21889,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"31","all species":"8","acc. species":"8","acc. species non-marine":"1","Checked names":"31 (100%)"},{"id":10,"pid":1,"name":"<div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kingdom&nbsp;<a href=\"aphia.php?p=taxdetails&id=10\" target=\"_blank\">Viruses<\/a><\/div>","all names":"227","all species":"115","acc. species":"115","acc. species non-marine":"20","Checked names":"186 (82%)"},{"id":"10Fossil","pid":10,"name":"<div style='text-indent: 8%'>Fossil<\/div>","all names":"0","all species":"0","acc. species":"0","acc. species non-marine":"0","Checked names":"0 (0%)"},{"id":"10Extant","pid":10,"name":"<div style='text-indent: 8%'>Extant<\/div>","all names":"227","all species":"115","acc. species":"115","acc. species non-marine":"20","Checked names":"186 (82%)"}];
+                            }
+
+                            function handleRowVisibility() {
+                                                                var option_rows_to_hide = [], options_rows_to_show = [];
+                                var items = aphia_jquery('#show_hide_container').find("input");
+                                var length = items.length;
+                                for (var index = 0; index < length; index++) {
+                                    var cur_checkbox = aphia_jquery(items[index]);
+                                    if (!cur_checkbox.prop('checked')) {
+                                        option_rows_to_hide.push(cur_checkbox.attr("id"));
+                                    } else {
+                                        options_rows_to_show.push(cur_checkbox.attr("id"));
+                                    }
+                                }
+                                var visible_count = options_rows_to_show.length;
+
+                                                                var indexes_to_show = [];
+                                var table_instance = getTableInstance();
+                                                                table_instance.bootstrapTable('filterBy', {});
+                                var data = table_instance.bootstrapTable('getData');
+                                length = data.length;
+
+                                                                var id_to_index_translation = [];
+                                var translate_mapper = [];
+                                for (index = 0; index < length; index++) {
+                                                                        id_to_index_translation[data[index].id] = index;
+
+                                                                        if (!data[index].org_name) {
+                                        data[index].org_name = data[index].name;
+                                        data[index].org_pid = data[index].pid;
+                                    } else {
+                                                                                data[index].name = data[index].org_name;
+                                        data[index].pid = data[index].org_pid;
+                                    }
+
+                                                        if (visible_count === 1) {
+                                                                if (data[index].org_name.includes(options_rows_to_show)) {
+                                                                        indexes_to_show.push(data[index].id);
+                                                                        translate_mapper[index] = data[index].pid;
+                                }
+                            } else if (!data[index].org_name.includes(option_rows_to_hide[0]) && !data[index].org_name.includes(option_rows_to_hide[1])) {
+                                                                indexes_to_show.push(data[index].id);
+                            }
+                        }
+
+                                                                var parent_id, parent_index;
+                                for (var source_index in translate_mapper) {
+                                                                        parent_id = translate_mapper[source_index];
+                                    if (parent_id in id_to_index_translation) {
+                                        parent_index = id_to_index_translation[parent_id];
+                                                                                data[source_index].name = data[parent_index].org_name;
+
+                                                                                                                        var index_of_child_that_replaced_grand_parent = translate_mapper.indexOf(data[parent_index].org_pid);
+                                        if (index_of_child_that_replaced_grand_parent > -1) {
+                                            data[source_index].pid = data[index_of_child_that_replaced_grand_parent].id;
+                                        } else {
+                                                                                        data[source_index].pid = data[parent_index].pid;
+                                        }
+                                    }
+                                }
+                                                                table_instance.bootstrapTable('filterBy', { id : indexes_to_show});
+                            }
+
+                                                        getTableInstance().bootstrapTable({
+                                treeShowField: 'name',
+                                data: getInitialData(),
+                                icons: {
+                                    columns: 'fa fa-columns'
+                                }
+                            });
+
+                                                        aphia_jquery('#show_hide_container').find("input").each(function(){
+                                aphia_jquery(this).on("click", function () {
+                                    handleRowVisibility();
+                                });
+                            });
+
+                                                        handleRowVisibility();
+
+                            aphia_jquery(document).ready(function(){
+                                                                // Link buttons to on top display opts
+                                aphiaContentOptsUpdateAutoPost(false);
+                                aphiaContentOptsSyncControl(
+                                    'Extant',
+                                    {
+                                        opt_name_to_sync: 'extant',
+                                        control_changed_callback : function (event) {
+                                            handleRowVisibility();
+                                        }
+                                    }
+                                );
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <br />
+            <br />
+            <div class="row">
+                <div class="col-xs-12">
+                                                                                    <div id="stats_edit_wait">
+                            <br/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://www.marinespecies.org/aphia/images/loader.gif" alt="Loading..." />
+                        </div>
+                        <div id="stats_edit" style="visibility: hidden;">
+                            <div><a href="aphia.php?p=stats_graph&export=1"><i class="fa fa-download">&nbsp;Download raw data</i></a></div>
+                            <a href="#" class="pop" target="_blank">
+                                <img class="thumbnail img-responsive" src="aphia.php?p=stats_graph" onload="getObj('stats_edit',false).style.visibility='visible';getObj('stats_edit_wait',false).innerHTML='';" alt="Editing statistics">
+                            </a>
+                        </div>
+                        <br /><br />
+                                                                                <div id="stats_editall_wait">
+                        <br/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://www.marinespecies.org/aphia/images/loader.gif" alt="Loading..." />
+                    </div>
+                    <div id="stats_editall" style="visibility: hidden;">
+                        <div><a href="aphia.php?p=stats_graph&type=editall&export=1"><i class="fa fa-download">&nbsp;Download raw data</i></a></div>
+                        <a href="#" class="pop" target="_blank">
+                            <img class="thumbnail img-responsive" src="aphia.php?p=stats_graph&type=editall" onload="getObj('stats_editall',false).style.visibility='visible';getObj('stats_editall_wait',false).innerHTML='';" alt="Editing statistics for all users">
+                        </a>
+                    </div>
+                    <br /><br />
+                                        <div id="stats_dbgrowth_wait">
+                        <br/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://www.marinespecies.org/aphia/images/loader.gif" alt="Loading..." />
+                    </div>
+                    <div id="stats_dbgrowth" style="visibility: hidden;">
+                        <div><a href="aphia.php?p=stats_graph&type=dbgrowth&export=1"><i class="fa fa-download">&nbsp;Download raw data</i></a></div>
+                        <a href="#" class="pop" target="_blank">
+                            <img class="thumbnail img-responsive " src="aphia.php?p=stats_graph&type=dbgrowth" onload="getObj('stats_dbgrowth',false).style.visibility='visible';getObj('stats_dbgrowth_wait',false).innerHTML='';" alt="Database growth statistics">
+                        </a>
+                    </div>
+                </div>
+            </div>
+                                            <h3>Discovery rate</h3>
+                <div class="row">
+                    <div class="col-sm-11 col-md-6 col-lg-5">
+                        <div class="radio-inline">
+                            <label><input type="radio" name="stats_discovery_rank" value="180">Genera</label>
+                        </div>
+                        <div class="radio-inline">
+                            <label><input type="radio" name="stats_discovery_rank" value="220" checked="checked">Species</label>
+                        </div>
+                        &nbsp;<div class="checkbox-inline">
+                            <label><input type="checkbox" name="stats_discovery_accepted" value="1">Limit to accepted</label>
+                        </div>
+                        <div class="input-group">
+                            <label class="input-group-addon">Belongs to</label>
+                            
+    <script type="text/javascript">
+        var comp_jquery = $;
+        comp_jquery(document).ready(function() {
+                            window.initAphiaComponentCombobox('d586e69aa5ed62a8', {
+                            view_component_ajax_url: 'aphia.php?p=rest&__route__/AjaxAphiaRecordsByNamePart',
+                                                                view_dict_optional_ajax_args: {
+                                    'rank_min': "10",
+                                    'rank_max': "160",
+                                },                view_component_ajax_append_input_to_url: true,                                                                                                                                                                                    view_hidden_key_id: 'AphiaID_discovery',                                    view_hidden_data_id: 'displayname_discovery',                                    view_hidden_key_value: '1',            view_hidden_data_value: 'Biota'    });
+
+        });
+    </script>
+        <div id="d586e69aa5ed62a8_storage" name="d586e69aa5ed62a8_storage"></div>
+                    <select id="d586e69aa5ed62a8" class="form-control input-sm"></select>
+                            </div>
+                        <br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div id="stats_discovery_wait">
+                            <br/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://www.marinespecies.org/aphia/images/loader.gif" alt="Loading..." />
+                        </div>
+                        <div id="stats_discovery">
+                            <div><a id="stats_discovery_export" href="aphia.php?p=stats_graph&type=discovery&export=1"><i class="fa fa-download">&nbsp;Download raw data</i></a></div>
+                            <a href="#" class="pop" target="_blank">
+                                <img class="thumbnail img-responsive" id="stats_discovery_img" alt="Discovery statistics" />
+                            </a>
+                        </div>
+                        <script type="text/javascript">
+                            var discovery_export = aphia_jquery("#stats_discovery_export");
+                            var discovery_image = aphia_jquery("#stats_discovery_img");
+                            var discovery_container = aphia_jquery("#stats_discovery");
+                            var discovery_wait_container = aphia_jquery("#stats_discovery_wait");
+
+                                                        discovery_image.on("load", function() {
+                                discovery_wait_container.hide();
+                                discovery_container.show();
+                            });
+
+                            function stats_discoveryOptsChanged() {
+                                discovery_container.hide();
+                                discovery_wait_container.show();
+
+                                var selectedId = aphia_jquery("input[name='AphiaID_discovery']").val();
+                                if (isNaN(selectedId) || !isFinite(selectedId) || selectedId <= 0) {
+                                    selectedId = -1;
+                                }
+                                var url = "aphia.php?p=stats_graph&type=discovery";
+                                url += "&id=" + selectedId;
+
+                                var rankValue = aphia_jquery("input[name='stats_discovery_rank']:checked").val();
+                                if (rankValue != 220) {
+                                    url += "&rank=" + rankValue;
+                                }
+                                var acceptedValue = aphia_jquery("input[name='stats_discovery_accepted']:checked").val();
+                                if (acceptedValue == 1) {
+                                    url += "&accepted=1";
+                                }
+
+                                                                discovery_image.attr('src', url);
+                                discovery_export.attr('href', url + '&export=1');
+                                stats_updateImageLinks();
+                            }
+
+                                                        aphia_jquery("input[name='stats_discovery_rank']").change(function(){
+                                stats_discoveryOptsChanged();
+                            });
+                            aphia_jquery("input[name='stats_discovery_accepted'").change(function () {
+                                stats_discoveryOptsChanged();
+                            });
+                            aphia_jquery("#d586e69aa5ed62a8_storage").change(function() {
+                                stats_discoveryOptsChanged();
+                            });
+                        </script>
+                    </div>
+                </div>
+
+                                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Authors describing most species during last decade</h3>
+                    </div>
+                    <div class="col-sm-11 col-md-8 col-lg-5">
+                        <div class="input-group">
+                            <label class="input-group-addon">Belongs to</label>
+                            
+    <script type="text/javascript">
+        var comp_jquery = $;
+        comp_jquery(document).ready(function() {
+                            window.initAphiaComponentCombobox('d18bd3dd70d056bf', {
+                            view_component_ajax_url: 'aphia.php?p=rest&__route__/AjaxAphiaRecordsByNamePart',
+                                                                view_dict_optional_ajax_args: {
+                                    'rank_min': "10",
+                                    'rank_max': "160",
+                                },                view_component_ajax_append_input_to_url: true,                                                                                                                                                                                    view_hidden_key_id: 'AphiaID_authors',                                    view_hidden_data_id: 'displayname_authors',                                    view_hidden_key_value: '1',            view_hidden_data_value: 'Biota'    });
+
+        });
+    </script>
+        <div id="d18bd3dd70d056bf_storage" name="d18bd3dd70d056bf_storage"></div>
+                    <select id="d18bd3dd70d056bf" class="form-control input-sm"></select>
+                            </div>
+                        <br />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+						<div id="stats_described_not_atomized_notice" class="alert alert-info">
+							The authority field is not atomized, so a number of duplicates or inconsistencies may appear here.
+						</div>
+						<br />
+						<div id="stats_described_wait">
+                            <br/>&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://www.marinespecies.org/aphia/images/loader.gif" alt="Loading..." />
+                        </div>
+                        <div id="stats_described">
+                            <div><a id="stats_described_export" href="aphia.php?p=stats_graph&type=authors&export=1"><i class="fa fa-download">&nbsp;Download raw data</i></a></div>
+                            <a href="#" class="pop" target="_blank">
+                                <img class="thumbnail img-responsive" id="stats_described_img" alt="Discovery statistics" />
+                            </a>
+                        </div>
+                        <script type="text/javascript">
+                            var described_export = aphia_jquery("#stats_described_export");
+                            var described_image = aphia_jquery("#stats_described_img");
+                            var described_container = aphia_jquery("#stats_described");
+                            var described_wait_container = aphia_jquery("#stats_described_wait");
+
+                                                        described_image.on("load", function() {
+                                described_wait_container.hide();
+                                described_container.show();
+                            });
+
+                            function stats_describedOptsChanged() {
+                                described_container.hide();
+                                described_wait_container.show();
+
+                                var selectedId = aphia_jquery("input[name='AphiaID_authors']").val();
+                                if (isNaN(selectedId) || !isFinite(selectedId) || selectedId <= 0) {
+                                    selectedId = -1;
+                                }
+                                var url = "aphia.php?p=stats_graph&type=authors";
+                                url += "&id=" + selectedId;
+
+                                                                described_image.attr('src', url);
+                                described_export.attr('href', url + '&export=1');
+                                stats_updateImageLinks();
+                            }
+
+                                                        aphia_jquery("#d18bd3dd70d056bf_storage").change(function() {
+                                stats_describedOptsChanged();
+                            });
+                        </script>
+                    </div>
+                </div>
+                        <div class="row">
+                <div class="col-xs-12">
+                    <h3>Citations (Google scholar)</h3>
+<div id='aphia_citations'>
+    Citations for "World Register of Marine Species": <b><p id='cit_count' style='display: inline;'>updating...</p></b>
+    <br />
+    [<a href="https://scholar.google.com/scholar?as_sdt=0&lookup=0&hl=en&q=%22World Register of Marine Species%22" target="_blank">view publications</a>]
+    <br />
+    <script type="text/javascript">
+        var comp_jquery = $;
+        comp_jquery.ajax({
+            url: 'https://www.marinespecies.org/aphia.php?p=rest&__route__/AjaxGetCitationsCount?title=%22World+Register+of+Marine+Species%22&token=654e63ae90e2a994&identifier=61c6dae33d794d477e6a68ed43f52eb3',
+            method: "GET",
+            success: function(result){
+                var valueClean = result.replace('.',' ').replace(',','');
+                if (valueClean >= 0 && !isNaN(valueClean) && isFinite(valueClean)) {
+                    comp_jquery('#cit_count').text(valueClean.replace(',',' '));
+                } else {
+                    comp_jquery('#cit_count').text('unable to update');
+                }
+            }
+        });
+    </script>
+</div>
+
+                </div>
+            </div>
+                        <br />
+            <div class="row">
+                <div class="col-xs-12">
+                    
+<h3>Web statistics<small>&nbsp;(<b><i>including webservice usage</i></b>)</small></h3>
+<div id="web_stats"></div>
+<script type="text/javascript">
+    var webstats_monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
+        "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+    ];
+
+    function webstats_getTableTemplate(first_col)
+    {
+        if (typeof(first_col) === "undefined") {
+            first_col = "Month";
+        }
+        return "<table border=\"0\" class=\"table\">\n" +
+            "   <tbody>" +
+            "      <tr>\n" +
+            "         <th>" + first_col + "</th>\n" +
+            "         <th style=\"text-align: right;\">Unique visitors</th>\n" +
+            "         <th style=\"text-align: right;\">Number of visits</th>\n" +
+            "         <th style=\"text-align: right;\">Pages</th>\n" +
+            "         <th style=\"text-align: right;\">Hits</th>\n" +
+            "         <th style=\"text-align: right;\">Bandwidth</th>\n" +
+            "      </tr>" +
+            "   </tbody>" +
+            "</table>";
+    }
+    function webstats_getHtmlRow(entry, title)
+    {
+        if (entry[0] == "0"
+            && !entry[1] == "0"
+            && !entry[2] == "0"
+            && !entry[3] == "0"
+            && !entry[4] == "0") {
+            return null;
+        }
+        return "<tr>\n" +
+            "   <td>" + title + "</td>\n" +
+            "   <td style=\"text-align: right;\">" + entry[0].toString().replace(new RegExp('(\\.|\\,)(?=(\\d{3})+)','g'),'&nbsp;') + "</td>\n" +
+            "   <td style=\"text-align: right;\">" + entry[1].toString().replace(new RegExp('(\\.|\\,)(?=(\\d{3})+)','g'),'&nbsp;') + "</td>\n" +
+            "   <td style=\"text-align: right;\">" + entry[2].toString().replace(new RegExp('(\\.|\\,)(?=(\\d{3})+)','g'),'&nbsp;') + "</td>\n" +
+            "   <td style=\"text-align: right;\">" + entry[3].toString().replace(new RegExp('(\\.|\\,)(?=(\\d{3})+)','g'),'&nbsp;') + "</td>\n" +
+            "   <td style=\"text-align: right;\">" + entry[4].toString().replace(new RegExp('(\\.|\\,)(?=(\\d{3})+)','g'),'&nbsp;') + "</td>\n" +
+            "</tr>";
+    }
+    function updateWebStats()
+    {
+        comp_jquery(document).ready(function() {
+            comp_jquery.ajax({
+                url: 'aphia.php?ublock=0&p=stats&request_type=ajax&type=web',
+                method: 'GET',
+                success: function(result){
+                    stats = result;
+
+                    var year_table = comp_jquery(webstats_getTableTemplate("Year total"));
+                    var year_rows = year_table.find("tbody");
+
+                    var new_table = comp_jquery(webstats_getTableTemplate("Month"));
+                    var rows = new_table.find("tbody");
+
+                                        var year = 2023;
+                    var last_month = 4;
+                    var years_still_to_process = 9;
+                    for (var counter = 0; counter < 12; counter++) {
+                        if (!(year.toString() in stats) || !((last_month-1) in stats[year.toString()])) {
+                            continue;
+                        }
+                        var entry_to_show = stats[year.toString()][(last_month-1)];
+                        var html = webstats_getHtmlRow(entry_to_show, webstats_monthNames[last_month-1] + " " + year.toString());
+                        if (html) {
+                            rows.append(comp_jquery(html));
+                        }
+                                                last_month--;
+                        if (last_month === 0) {
+                                                        last_month = 12;
+                            year--;
+                            years_still_to_process--;
+                        }
+                    }
+
+                                        while (years_still_to_process-- >= 0
+                        && (year.toString() in stats)
+                        && (12 in stats[year.toString()])
+                        ) {
+                        html = webstats_getHtmlRow(stats[year.toString()][12], year.toString());
+                        if (html) {
+                            year_rows.append(comp_jquery(html));
+                        }
+                        year--;
+                    }
+                                        var stats_element = comp_jquery('#web_stats');
+                    stats_element.empty();
+                    stats_element.append(new_table);
+                    stats_element.append(year_table);
+
+                                        comp_jquery("#update_webstats_message").hide();
+                }
+            });
+        });
+    }
+
+        updateWebStats();
+</script>                </div>
+            </div>
+                    </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function stats_updateImageLinks() {
+        aphia_jquery('.pop').each(function () {
+            var thisObj = aphia_jquery(this);
+            thisObj.attr('href', thisObj.find('img').attr('src') + '&resolution=fullhd');
+        });
+    }
+    aphia_jquery(document).ready(function () {
+        stats_updateImageLinks();
+    });
+</script>
+<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <img src="" class="imagepreview" style="width: 100%;" >
+            </div>
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+</div>
+<div class="container-fluid worms-footer">
+    <br/>
+    <div class="row">
+        <div class="col-xs-6 col-md-3">
+            <div class="worms-footer-column">
+                <h4>WoRMS</h4>
+                <ul class="worms-footer-list">
+                    <li><a href="/about.php#what_is_worms">What is WoRMS</a></li>
+                    <li><a href="/lifewatch.php">What is LifeWatch</a></li>
+                    <li><a href="/subregisters.php">Subregisters</a></li>
+                    <li><a href="/about.php#partners">Partners</a></li>
+                    <li><a href="/about.php#users">WoRMS users</a></li>
+                    <li><a href="/wormsliterature.php">WoRMS in literature</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div class="worms-footer-column">
+                <h4>Using WoRMS</h4>
+                <ul class="worms-footer-list">
+                    <li><a href="/about.php#cite_worms">Citing WoRMS</a></li>
+                    <li><a href="/about.php#terms">Terms of use</a></li>
+                    <li><a href="/usersrequest.php">Request access</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div class="worms-footer-column">
+                <h4>Tools</h4>
+                <ul class="worms-footer-list">
+                    <li><a href="aphia.php?p=match">WoRMS Match Taxa</a></li>
+                    <li><a href="https://www.lifewatch.be/data-services/" target="_blank">LifeWatch Match Taxa</a></li>
+                    <li><a href="aphia.php?p=webservice">Webservices</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-xs-6 col-md-3">
+            <div class="worms-footer-column">
+                <h4>Connect with us</h4>
+                <ul class="worms-footer-list">
+                    <li>
+                        <a href="#" onclick="var addr=$('<textarea/>').html('&amp;#105;&amp;#110;&amp;#102;&amp;#111;&amp;#64;&amp;#109;&amp;#97;&amp;#114;&amp;#105;&amp;#110;&amp;#101;&amp;#115;&amp;#112;&amp;#101;&amp;#99;&amp;#105;&amp;#101;&amp;#115;&amp;#46;&amp;#111;&amp;#114;&amp;#103;').text();var check; var self=this;$(window).blur(function(){clearTimeout(check);});check=setTimeout(function(){self.innerText=addr;},3000);window.location.href='mailto:' + addr + '?subject=WoRMS Contact'; return false;"><i class="fa fa-envelope" aria-hidden="true"></i>Send us an email</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/WRMarineSpecies" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter page</a>
+                    </li>
+                    <li>
+                                                <a href="aphia.php?p=rss" target="_blank"><i class="fa fa-rss fa-1x" aria-hidden="true"></i>RSS Feed</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <hr class="worms-footer-splitter" />
+    </div>
+    <div class="row">
+        <div class="worms-footer-hosted_by text-center">
+            	<style>
+        .lwbanner {
+            
+            color: #a9a9a9;
+            font-size: calc(13px + (26 - 13) * ((100vw - 300px) / (4000 - 300)));
+            font-family: 'open_sansregular','Helvetica Neue', Helvetica, sans-serif;
+            padding: 0.5em;
+            border: 0px solid #bfbfbf;
+        }
+        
+        .lwbanner div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .lwbanner span{
+            padding: 1%;
+        }
+        
+        .lwbanner img {
+            height: 60px;
+            max-width: 33%; 
+        }
+        
+        .lwbanner a {
+            color: #a9a9a9;
+            font-size: calc(10px + (20 - 10) * ((100vw - 300px) / (4000 - 300)));
+            text-decoration: none;
+        }
+        .lwbanner a:hover {
+            text-decoration: underline;
+        }
+        
+        .lwbanner small {
+            font-size: calc(10px + (20 - 10) * ((100vw - 300px) / (4000 - 300)));
+        }
+	</style>		<div id="lwbanner" class="lwbanner">
+			<div><img src="data:image/png;base64,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"/><span>This service is powered by LifeWatch Belgium<br/><small></small></span><a href="http://www.lifewatch.be" target="_blank">Learn more&raquo;</a></div>
+		</div>
+            <small>Website and databases developed and hosted by
+                <a href="http://www.vliz.be" target="_blank">Flanders Marine Institute</a> &middot; Page generated on 2023-05-20 05:52:25+02:00 &middot; <a href="http://www.vliz.be/privacy" target="_blank">Privacy and cookie policy</a>
+            </small>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
