@@ -3073,10 +3073,10 @@ https://www.marinespecies.org/imis.php?module=ref&refid=239424&basketaction=add#
 https://www.marinespecies.org/imis.php?module=ref&refid=118711&basketaction=add,False
 https://www.marinespecies.org/imis.php?module=ref&refid=118711#aut,True
 https://www.marinespecies.org/imis.php?module=ref&refid=118711#top,True
-https://www.marinespecies.org/imis.php?module=person&persid=48#top,False
-https://www.marinespecies.org/imis.php?module=person&persid=48#ins,False
-https://www.marinespecies.org/imis.php?module=person&persid=48#ref,False
-https://www.marinespecies.org/imis.php?module=person&persid=48#pro,False
+https://www.marinespecies.org/imis.php?module=person&persid=48#top,True
+https://www.marinespecies.org/imis.php?module=person&persid=48#ins,True
+https://www.marinespecies.org/imis.php?module=person&persid=48#ref,True
+https://www.marinespecies.org/imis.php?module=person&persid=48#pro,True
 https://www.marinespecies.org/imis.php?module=person&persid=48#dat,True
 https://www.marinespecies.org/imis.php?page=image&pic=129690,False
 https://www.marinespecies.org/imis.php?module=ref&refid=312036,False
@@ -3143,4 +3143,9 @@ https://www.marinespecies.org/imis.php?module=ref&refid=228661,False
 https://www.marinespecies.org/imis.php?module=ref&refid=99962,False
 https://www.marinespecies.org/imis.php?module=ref&refid=76617,False
 https://www.marinespecies.org/imis.php?module=ref&refid=63805,False
-https://www.marinespecies.org/imis.php?module=ref&refid=21549,False
+https://www.marinespecies.org/imis.php?module=ref&refid=21549,True
+https://www.marinespecies.org/imis.php?module=ref&refid=21549&basketaction=add,False
+https://www.marinespecies.org/imis.php?module=person&persid=19,False
+https://www.marinespecies.org/imis.php?module=ref&refid=21549#aut,False
+https://www.marinespecies.org/imis.php?module=ref&refid=21549#dat,True
+https://www.marinespecies.org/imis.php?module=ref&refid=21549#top,False
