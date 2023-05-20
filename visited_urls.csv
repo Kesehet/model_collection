@@ -33,8 +33,8 @@ https://www.marinespecies.org/aphia.php?p=soap&wsdl=1,True
 https://www.marinespecies.org/aphia.php?p=soap,True
 https://www.marinespecies.org/aphia.php?p=webservice&type=excel2000,True
 https://www.marinespecies.org/aphia.php?p=webservice&type=excel2003,True
-https://www.marinespecies.org/aphia.php?p=webservice&type=excel2007,False
-https://www.marinespecies.org/aphia.php?p=webservice&type=excel2010,False
+https://www.marinespecies.org/aphia.php?p=webservice&type=excel2007,True
+https://www.marinespecies.org/aphia.php?p=webservice&type=excel2010,True
 https://www.marinespecies.org/aphia.php?p=webservice&type=php5,False
 https://www.marinespecies.org/aphia.php?p=webservice&type=asp,False
 https://www.marinespecies.org/aphia.php?p=webservice&type=r,False
@@ -6306,3 +6306,8 @@ https://www.marinespecies.org/traits/wiki,False
 https://www.marinespecies.org/aphia/webservice/Aphia_webservice_getAphiaRecordById_Office2000.xls,False
 https://www.marinespecies.org/aphia/webservice/Aphia_webservice_getAphiaClassificationByID_Office2000.xls,False
 https://www.marinespecies.org/aphia/webservice/Aphia_webservice_OfficeXP-2003.xls,False
+https://www.marinespecies.org/aphia/webservice/Aphia_webservice_Office2007.xlsm,False
+https://www.marinespecies.org/aphia/webservice/Aphia_webservice_getAphiaRecordById_Office2007.xlsm,False
+https://www.marinespecies.org/aphia/webservice/Aphia_webservice_Office2010.xlsm,False
+https://www.marinespecies.org/aphia/webservice/Aphia_webservice_Office2010_getAphiaRecordByID.xlsm,False
+https://www.marinespecies.org/aphia/webservice/Aphia_webservice_Office2010_matchAphiaRecordsByNames.xlsm,False
